@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.LittleLemon" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.LittleLemon" parent="android:Theme.Material.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/primaryColor1</item>
+        <item name="android:colorSecondary">@color/secondaryColor1</item>
+        <item name="android:colorAccent">@color/highlightColor1</item>
+    </style>
 </resources>
