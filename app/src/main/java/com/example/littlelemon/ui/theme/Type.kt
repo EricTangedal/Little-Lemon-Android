@@ -8,36 +8,28 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.littlelemon.R
 
-val Fonts = FontFamily(
-    Font(R.font.markazi, FontWeight.Medium),
-    Font(R.font.karla, FontWeight.Normal)
-)
+val karla = FontFamily(Font(R.font.karla))
+val markazi = FontFamily(Font(R.font.markazi))
 
-// Set of Material typography styles to start with
 val Typography = Typography(
-    bodyLarge = TextStyle(
-        fontFamily = Fonts,
+    bodyMedium = TextStyle(
+        fontFamily = karla,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
-    )
-
-
-    /* Other default text styles to override
-    titleLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
     ),
-    labelSmall = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
+    headlineLarge = TextStyle(
+        fontFamily = markazi,
+        fontWeight = FontWeight.Bold,
+        fontSize = 48.sp,
         letterSpacing = 0.5.sp
+    ),
+    headlineSmall = TextStyle(
+        fontFamily = markazi,
+        fontWeight = FontWeight.Bold,
+        fontSize = 18.sp,
+        letterSpacing = 0.5.sp,
+        color = primaryGreen
     )
-    */
 )
